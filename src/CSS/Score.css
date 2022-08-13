@@ -1,0 +1,27 @@
+.Score{
+    margin:auto;
+    width:450px;
+    height:400px;
+    border-radius:10px;
+    background-color:rgba(195,186,186,0.9);
+    position: absolute;
+    z-index: 2;
+ 
+  
+}
+.Congrats{
+font-size:38px;
+}
+.ResetButton{
+border:none;
+font-size:18px;
+padding:10px 20px;
+border-radius: 10px;
+margin-top:60px;
+}
+
+.Score-Points{
+    font-size:24px;
+    margin: 32px auto;
+    font-weight: bold;
+}

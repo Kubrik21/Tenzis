@@ -1,0 +1,26 @@
+.Die{
+    width:100px;
+    height:100px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 10px 10px rgb(173, 168, 168);
+    cursor:pointer;
+    margin-top: 10px;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    padding-top:20px;
+}
+.Active-die
+{
+    width:100px;
+    height:100px;
+    border-radius: 8px;
+    background-color: rgb(48, 96, 45);
+    box-shadow: 0 10px 10px rgb(173, 168, 168);
+    cursor:pointer;
+    margin-top: 10px;
+
+}
