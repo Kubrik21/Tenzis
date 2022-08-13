@@ -8,7 +8,17 @@ function Field() {
     const [numb, setNumb] = useState([])
     const [win, setWin] = useState('false')
     const [score,setScore]=useState(0)
+    const [local,setLocalStorage]=useState([])
 
+    useEffect(()=>{
+        const fetchData = async () => {
+        if(await localStorage.getItem("score"))
+        await setLocalStorage(()=>{return(JSON.parse(localStorage.getItem("score")))})
+        console.log(local)}
+        fetchData()
+
+    },[])
+    
     function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
@@ -108,7 +118,7 @@ function Field() {
             <div className="Field-elems">
                 {Dieelem}
                 <button className="Button-elem" onClick={Change_die}>Roll up again!</button>
-                {win === true && <Score score={score} click={()=>Reset()} />}
+                {win === true && <Score score={score} localStore={localStorage} click={()=>Reset()} />}
             </div>
         </div>
     )
